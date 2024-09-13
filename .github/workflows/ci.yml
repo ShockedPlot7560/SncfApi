@@ -10,12 +10,13 @@ jobs:
       fail-fast: false
       matrix:
         image: [ubuntu-22.04]
+        php: [8.1, 8.2, 8.3]
     steps:
       - uses: actions/checkout@v2
       - name: Setup PHP and tools
         uses: shivammathur/setup-php@2.15.0
         with:
-          php-version: 8.1
+          php-version: ${{ matrix.php }}
       - name: Install Composer
         run: curl -sS https://getcomposer.org/installer | php
       - name: Restore Composer package cache
@@ -32,11 +33,9 @@ jobs:
       - name: Run PHPStan
         run: ./vendor/bin/phpstan analyze --no-progress --memory-limit=2G
   php-cs-fixer:
-    runs-on: ${{ matrix.image }}
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
-      matrix:
-        image: [ubuntu-22.04]
     steps:
       - uses: actions/checkout@v2
       - name: Setup PHP and tools
