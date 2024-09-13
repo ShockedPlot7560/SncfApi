@@ -1,0 +1,8 @@
+parameters:
+    level: 8
+    paths:
+        - src
+    ignoreErrors:
+
+        -
+            message: "#^Method ShockedPlot7560\\\\SncfApi\\\\[a-zA-Z0-9]+\\\\[a-zA-Z0-9]+\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"

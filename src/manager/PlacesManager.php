@@ -46,6 +46,9 @@ class PlacesManager {
 		return $ret;
 	}
 
+	/**
+	 * @param array<string, mixed> $params
+	 */
 	private function cacheKey(array $params) : string {
 		return "places_" . md5(serialize($params));
 	}

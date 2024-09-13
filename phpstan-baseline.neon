@@ -1,0 +1,241 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property ShockedPlot7560\\\\SncfApi\\\\client\\\\Client\\:\\:\\$token is never read, only written\\.$#"
+			count: 1
+			path: src/client/Client.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\client\\\\HttpGateway\\:\\:createRequest\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/client/HttpGateway.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\client\\\\HttpGateway\\:\\:get\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/client/HttpGateway.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\client\\\\HttpGateway\\:\\:paramsToQuery\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/client/HttpGateway.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\manager\\\\JourneyManager\\:\\:cacheKey\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/manager/JourneyManager.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\manager\\\\PlacesManager\\:\\:cacheKey\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/manager/PlacesManager.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\AdministrativeRegion\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/AdministrativeRegion.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\AirPolluants\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/AirPolluants.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\ApplicationPeriod\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/ApplicationPeriod.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\CarDirectPath\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/CarDirectPath.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Channel\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Channel.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Co2Emission\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Co2Emission.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Code\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Code.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Context\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Context.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Coord\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Coord.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\DisplayInformations\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/DisplayInformations.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\DisplayInformationsLink\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/DisplayInformationsLink.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Disruption\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Disruption.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Distances\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Distances.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Fare\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Fare.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\FeedPublisher\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/FeedPublisher.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\From\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/From.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\GeoJson\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/GeoJson.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\ImpactedObject\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/ImpactedObject.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\ImpactedStop\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/ImpactedStop.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Journey\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Journey.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Link\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Link.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Message\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Message.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Place\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Place.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Property\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Property.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\PtObject\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/PtObject.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Section\\:\\:__construct\\(\\) has parameter \\$additionnalInformations with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Section.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Section\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Section.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\SectionBuilder\\:\\:from\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/SectionBuilder.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\SectionLink\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/SectionLink.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Severity\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Severity.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\StopArea\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/StopArea.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\StopDateTime\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/StopDateTime.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\StopPoint\\:\\:__construct\\(\\) has parameter \\$administrativeRegions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/StopPoint.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\StopPoint\\:\\:__construct\\(\\) has parameter \\$equipments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/StopPoint.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\StopPoint\\:\\:__construct\\(\\) has parameter \\$links with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/StopPoint.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\StopPoint\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/StopPoint.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Terminus\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Terminus.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Total\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Total.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Trip\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Trip.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\objects\\\\Values\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/objects/Values.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\response\\\\JourneyResponse\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/response/JourneyResponse.php
+
+		-
+			message: "#^Method ShockedPlot7560\\\\SncfApi\\\\response\\\\PlacesResponse\\:\\:fromArray\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/response/PlacesResponse.php

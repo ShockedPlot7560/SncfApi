@@ -16,9 +16,7 @@ class Client {
 	private HttpGateway $httpGateway;
 	private CacheInterface $cache;
 
-	public function __construct(
-		private string $token
-	) {
+	public function __construct(string $token) {
 		$this->cache = new Psr16Adapter("Files");
 		$this->httpGateway = new HttpGateway($this->createClient($token));
 	}

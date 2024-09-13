@@ -44,6 +44,9 @@ class JourneyManager {
 		return $ret;
 	}
 
+	/**
+	 * @param array<string, mixed> $params
+	 */
 	private function cacheKey(array $params) : string {
 		return "journey_" . md5(serialize($params));
 	}

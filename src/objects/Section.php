@@ -6,6 +6,7 @@ final class Section {
 	/**
 	 * @param SectionLink[] $links
 	 * @param StopDateTime[] $stopDateTime
+	 * @param mixed[] $additionnalInformations
 	 */
 	private function __construct(
 		public readonly string $id,

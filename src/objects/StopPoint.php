@@ -3,6 +3,11 @@
 namespace ShockedPlot7560\SncfApi\objects;
 
 final class StopPoint {
+	/**
+	 * @param mixed[] $links
+	 * @param mixed[] $equipments
+	 * @param AdministrativeRegion[] $administrativeRegions
+	 */
 	private function __construct(
 		public readonly string $id,
 		public readonly string $name,

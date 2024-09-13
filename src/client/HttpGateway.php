@@ -13,14 +13,23 @@ class HttpGateway {
 	) {
 	}
 
+	/**
+	 * @param array<string, mixed> $params
+	 */
 	public function get(string $url, array $params = []) : ResponseInterface {
 		return $this->httpClient->sendRequest($this->createRequest($url, $params));
 	}
 
+	/**
+	 * @param array<string, mixed> $params
+	 */
 	private function createRequest(string $url, array $params = []) : RequestInterface {
 		return new Request('GET', $url . '?' . $this->paramsToQuery($params));
 	}
 
+	/**
+	 * @param array<string, mixed> $params
+	 */
 	private function paramsToQuery(array $params) : string {
 		return http_build_query($params);
 	}
