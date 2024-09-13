@@ -1,0 +1,23 @@
+{
+    "name": "shockedplot/sncf-api",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ShockedPlot7560\\SncfApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ShockedPlot7560",
+            "email": "no-reply@tchallon.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "psr/http-client": "^1.0",
+        "guzzlehttp/guzzle": "^7.9",
+        "kevinrob/guzzle-cache-middleware": "^5.1",
+        "phpfastcache/phpfastcache": "^9.2"
+    }
+}
