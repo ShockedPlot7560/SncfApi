@@ -5,7 +5,7 @@ Fully object-oriented PHP client for the SNCF API.
 ## Installation
 
 ```bash
-composer require shockedplot/sncf-api
+composer require shockedplot7560/sncf-api
 ```
 
 ## Description
