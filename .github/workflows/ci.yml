@@ -57,4 +57,4 @@ jobs:
       - name: Install Composer dependencies
         run: php composer.phar install --prefer-dist --no-interaction
       - name: Run PHP-CS-Fixer
-        run: php-cs-fixer fix --dry-run --diff --ansi
+        run: ./vendor/bin/php-cs-fixer fix --dry-run --diff --ansi
