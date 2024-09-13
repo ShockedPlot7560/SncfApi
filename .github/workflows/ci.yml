@@ -1,0 +1,60 @@
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_call:
+jobs:
+  phpstan:
+    runs-on: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [ubuntu-22.04]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP and tools
+        uses: shivammathur/setup-php@2.15.0
+        with:
+          php-version: 8.1
+      - name: Install Composer
+        run: curl -sS https://getcomposer.org/installer | php
+      - name: Restore Composer package cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/composer/files
+            ~/.cache/composer/vcs
+          key: "composer-v2-cache-${{ matrix.php }}-${{ hashFiles('./composer.lock') }}"
+          restore-keys: |
+            composer-v2-cache-
+      - name: Install Composer dependencies
+        run: php composer.phar install --prefer-dist --no-interaction
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan analyze --no-progress --memory-limit=2G
+  php-cs-fixer:
+    runs-on: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [ubuntu-22.04]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP and tools
+        uses: shivammathur/setup-php@2.15.0
+        with:
+          php-version: 8.1
+      - name: Install Composer
+        run: curl -sS https://getcomposer.org/installer | php
+      - name: Restore Composer package cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/composer/files
+            ~/.cache/composer/vcs
+          key: "composer-v2-cache-${{ matrix.php }}-${{ hashFiles('./composer.lock') }}"
+          restore-keys: |
+            composer-v2-cache-
+      - name: Install Composer dependencies
+        run: php composer.phar install --prefer-dist --no-interaction
+      - name: Run PHP-CS-Fixer
+        run: php-cs-fixer fix --dry-run --diff --ansi
